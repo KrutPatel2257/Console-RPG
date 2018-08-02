@@ -6,10 +6,17 @@
 //  Copyright © 2018 Krut Patel. All rights reserved.
 //
 
-#include <iostream>
+#include "Game.hpp"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main() {
+    
+    srand(time(NULL));
+    
+    Game game;
+    
+    while (game.getPlaying()) {
+        game.mainMenu();
+    }
+    
     return 0;
 }
