@@ -55,14 +55,14 @@ void Character::initialize(const std::string name){
     this->dexterity = 5;
     this->intelligence = 5;
     
-    this->hp = 10;
-    this->hpMax = 10;
-    this->stamina = 10;
-    this->staminaMax = 10;
-    this->damageMin = 1;
-    this->damageMax = 4;
-    this->defence = 1;
-    this->luck = 1;
+    this->hpMax = (this->vitality * 2) + (this->strength / 2);
+    this->hp = hpMax;
+    this->staminaMax = this->vitality + (this->strength / 2) + (this->dexterity / 3);
+    this->stamina = staminaMax;
+    this->damageMin = this->strength;
+    this->damageMax = this->strength + 2;
+    this->defence = this->dexterity + (this->intelligence / 2);
+    this->luck = this->intelligence;
     
     this->statPoints = 0;
     this->skillPoints = 0;
@@ -97,4 +97,20 @@ void Character::levelUp(){
         this->statPoints++;
         this->skillPoints++;
     }
+}
+
+std::string Character::getAsString() const {
+    return std::to_string(xPos) + " "
+        + std::to_string(yPos) + " "
+        + name + " "
+        + std::to_string(level) + " "
+        + std::to_string(exp) + " "
+        + std::to_string(strength) + " "
+        + std::to_string(vitality) + " "
+        + std::to_string(dexterity) + " "
+        + std::to_string(intelligence) + " "
+        + std::to_string(hp) + " "
+        + std::to_string(stamina) + " "
+        + std::to_string(statPoints) + " "
+        + std::to_string(skillPoints);
 }

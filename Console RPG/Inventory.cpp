@@ -9,28 +9,46 @@
 #include "Inventory.hpp"
 
 Inventory::Inventory(){
-    cap = 10;
-    nrOfItems = 0;
-    itemArr = new Item*[cap];
+    this->cap = 5;
+    this->nrOfItems = 0;
+    this->itemArr = new Item*[cap];
+    this->initialize();
 }
 
 Inventory::~Inventory(){
     for (size_t i = 0; this->nrOfItems; i++) {
         delete this->itemArr[i];
     }
-    delete[] itemArr;
+    delete[] this->itemArr;
+}
+
+Inventory::Inventory(const Inventory &obj){
+    this->cap = obj.cap;
+    this->nrOfItems = obj.nrOfItems;
+    this->itemArr = new Item*[this->cap];
+    
+    for (size_t i = 0; i < this->nrOfItems; i++) {
+        this->itemArr[i] = obj.itemArr[i]->clone();
+    }
+    
+    initialize(this->nrOfItems);
+}
+
+Item& Inventory::operator[](const int index){
+    if(index < 0 || index >= this->nrOfItems)
+        throw("BAD INDEX!");
+    
+    return *this->itemArr[index];
 }
 
 void Inventory::expand(){
     this->cap *= 2;
     
-    Item **tempArr = new Item*[cap];
-    for (size_t i = 0; i < nrOfItems; i++) {
-        tempArr[i] = new Item(*itemArr[i]);
+    Item **tempArr = new Item*[this->cap];
+    for (size_t i = 0; i < this->nrOfItems; i++) {
+        tempArr[i] = this->itemArr[i];
     }
-    for (size_t i = 0; i < nrOfItems; i++) {
-        delete this->itemArr[i];
-    }
+    
     delete[] this->itemArr;
     
     this->itemArr = tempArr;
@@ -48,7 +66,7 @@ void Inventory::addItem(const Item &item){
         expand();
     }
     
-    this->itemArr[this->nrOfItems++] = new Item(item);
+    this->itemArr[this->nrOfItems++] = item.clone();
 }
 
 void Inventory::removeItem(int index){

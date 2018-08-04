@@ -10,6 +10,8 @@
 #define Game_hpp
 
 #include <ctime>
+#include <vector>
+#include <fstream>
 #include "Character.hpp"
 #include "Functions.h"
 
@@ -24,6 +26,9 @@ public:
     //Functions
     void mainMenu();
     void initGame();
+    void createNewCharacter();
+    void saveCharacters();
+    void loadCharacters();
     
     //Accessors
     inline bool getPlaying() const { return this->playing; }
@@ -34,7 +39,9 @@ private:
     bool playing;
     
     // Character related
-    Character character;
+    int activeCharacter;
+    std::vector<Character> characters;
+    std::string fileName;
 };
 
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F188B5D021163CD8000705CF /* Armor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F188B5CE21163CD8000705CF /* Armor.cpp */; };
 		F1BC874E211306DF00238740 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1BC874D211306DF00238740 /* main.cpp */; };
 		F1BC875A211309E500238740 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1BC8758211309E500238740 /* Game.cpp */; };
 		F1BC875D211311A900238740 /* Character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1BC875B211311A900238740 /* Character.cpp */; };
@@ -28,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F188B5CE21163CD8000705CF /* Armor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Armor.cpp; sourceTree = "<group>"; };
+		F188B5CF21163CD8000705CF /* Armor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Armor.hpp; sourceTree = "<group>"; };
 		F1BC874A211306DF00238740 /* Console RPG */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Console RPG"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1BC874D211306DF00238740 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F1BC87542113082B00238740 /* Functions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Functions.h; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				F1BDA59E2115C6A300DA26CA /* Inventory.hpp */,
 				F1BDA5A02115CAB900DA26CA /* Weapon.cpp */,
 				F1BDA5A12115CAB900DA26CA /* Weapon.hpp */,
+				F188B5CE21163CD8000705CF /* Armor.cpp */,
+				F188B5CF21163CD8000705CF /* Armor.hpp */,
 			);
 			path = "Console RPG";
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 			files = (
 				F1EFE1E82115BB5000909086 /* Item.cpp in Sources */,
 				F1BDA5A22115CAB900DA26CA /* Weapon.cpp in Sources */,
+				F188B5D021163CD8000705CF /* Armor.cpp in Sources */,
 				F1BC875D211311A900238740 /* Character.cpp in Sources */,
 				F1BC874E211306DF00238740 /* main.cpp in Sources */,
 				F1BDA59F2115C6A300DA26CA /* Inventory.cpp in Sources */,

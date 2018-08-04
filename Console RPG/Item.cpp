@@ -8,10 +8,12 @@
 
 #include "Item.hpp"
 
-Item::Item(){
+Item::Item(std::string name, int level, int buyValue, int sellValue, int rarity){
     this->name = "NONE";
+    this->level = level;
     this->buyValue = 0;
     this->sellValue = 0;
+    this->rarity = rarity;
 }
 
 Item::~Item(){
