@@ -11,6 +11,7 @@
 		F1BC875A211309E500238740 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1BC8758211309E500238740 /* Game.cpp */; };
 		F1BC875D211311A900238740 /* Character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1BC875B211311A900238740 /* Character.cpp */; };
 		F1BDA59F2115C6A300DA26CA /* Inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1BDA59D2115C6A300DA26CA /* Inventory.cpp */; };
+		F1BDA5A22115CAB900DA26CA /* Weapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1BDA5A02115CAB900DA26CA /* Weapon.cpp */; };
 		F1EFE1E82115BB5000909086 /* Item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EFE1E62115BB5000909086 /* Item.cpp */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,8 @@
 		F1BC875C211311A900238740 /* Character.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Character.hpp; sourceTree = "<group>"; };
 		F1BDA59D2115C6A300DA26CA /* Inventory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Inventory.cpp; sourceTree = "<group>"; };
 		F1BDA59E2115C6A300DA26CA /* Inventory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Inventory.hpp; sourceTree = "<group>"; };
+		F1BDA5A02115CAB900DA26CA /* Weapon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Weapon.cpp; sourceTree = "<group>"; };
+		F1BDA5A12115CAB900DA26CA /* Weapon.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Weapon.hpp; sourceTree = "<group>"; };
 		F1EFE1E62115BB5000909086 /* Item.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Item.cpp; sourceTree = "<group>"; };
 		F1EFE1E72115BB5000909086 /* Item.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Item.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +83,8 @@
 				F1EFE1E72115BB5000909086 /* Item.hpp */,
 				F1BDA59D2115C6A300DA26CA /* Inventory.cpp */,
 				F1BDA59E2115C6A300DA26CA /* Inventory.hpp */,
+				F1BDA5A02115CAB900DA26CA /* Weapon.cpp */,
+				F1BDA5A12115CAB900DA26CA /* Weapon.hpp */,
 			);
 			path = "Console RPG";
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1EFE1E82115BB5000909086 /* Item.cpp in Sources */,
+				F1BDA5A22115CAB900DA26CA /* Weapon.cpp in Sources */,
 				F1BC875D211311A900238740 /* Character.cpp in Sources */,
 				F1BC874E211306DF00238740 /* main.cpp in Sources */,
 				F1BDA59F2115C6A300DA26CA /* Inventory.cpp in Sources */,
