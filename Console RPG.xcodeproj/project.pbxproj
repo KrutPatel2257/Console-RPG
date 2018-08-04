@@ -10,6 +10,8 @@
 		F1BC874E211306DF00238740 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1BC874D211306DF00238740 /* main.cpp */; };
 		F1BC875A211309E500238740 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1BC8758211309E500238740 /* Game.cpp */; };
 		F1BC875D211311A900238740 /* Character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1BC875B211311A900238740 /* Character.cpp */; };
+		F1EFE1E82115BB5000909086 /* Item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EFE1E62115BB5000909086 /* Item.cpp */; };
+		F1EFE1EB2115BBCB00909086 /* Inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1EFE1E92115BBCB00909086 /* Inventory.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +34,10 @@
 		F1BC8759211309E500238740 /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
 		F1BC875B211311A900238740 /* Character.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Character.cpp; sourceTree = "<group>"; };
 		F1BC875C211311A900238740 /* Character.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Character.hpp; sourceTree = "<group>"; };
+		F1EFE1E62115BB5000909086 /* Item.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Item.cpp; sourceTree = "<group>"; };
+		F1EFE1E72115BB5000909086 /* Item.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Item.hpp; sourceTree = "<group>"; };
+		F1EFE1E92115BBCB00909086 /* Inventory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Inventory.cpp; sourceTree = "<group>"; };
+		F1EFE1EA2115BBCB00909086 /* Inventory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Inventory.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,10 @@
 				F1BC8759211309E500238740 /* Game.hpp */,
 				F1BC875B211311A900238740 /* Character.cpp */,
 				F1BC875C211311A900238740 /* Character.hpp */,
+				F1EFE1E62115BB5000909086 /* Item.cpp */,
+				F1EFE1E72115BB5000909086 /* Item.hpp */,
+				F1EFE1E92115BBCB00909086 /* Inventory.cpp */,
+				F1EFE1EA2115BBCB00909086 /* Inventory.hpp */,
 			);
 			path = "Console RPG";
 			sourceTree = "<group>";
@@ -130,8 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1EFE1E82115BB5000909086 /* Item.cpp in Sources */,
 				F1BC875D211311A900238740 /* Character.cpp in Sources */,
 				F1BC874E211306DF00238740 /* main.cpp in Sources */,
+				F1EFE1EB2115BBCB00909086 /* Inventory.cpp in Sources */,
 				F1BC875A211309E500238740 /* Game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

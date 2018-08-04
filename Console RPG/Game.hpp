@@ -9,8 +9,6 @@
 #ifndef Game_hpp
 #define Game_hpp
 
-#include <iostream>
-#include <iomanip>
 #include <ctime>
 #include "Character.hpp"
 #include "Functions.h"
@@ -25,6 +23,7 @@ public:
     
     //Functions
     void mainMenu();
+    void initGame();
     
     //Accessors
     inline bool getPlaying() const { return this->playing; }
@@ -33,6 +32,9 @@ public:
 private:
     int choice;
     bool playing;
+    
+    // Character related
+    Character character;
 };
 
 

@@ -9,7 +9,8 @@
 #ifndef Character_hpp
 #define Character_hpp
 
-#include <string>
+#include <math.h>
+#include "Inventory.hpp"
 
 class Character {
 public:
@@ -17,7 +18,9 @@ public:
     virtual ~Character();
     
     // Functions
-    void initialize(int level, std::string name);
+    void initialize(std::string name);
+    void printStats() const;
+    void levelUp();
     
     // Accessors
     inline const double& getX() const { return this->xPos; }
@@ -46,9 +49,19 @@ private:
     int hp;
     int hpMax;
     int stamina;
+    int staminaMax;
     int damageMin;
     int damageMax;
     int defence;
+    int luck;
+    
+    int strength;
+    int vitality;
+    int dexterity;
+    int intelligence;
+    
+    int statPoints;
+    int skillPoints;
 };
 
 #endif /* Character_hpp */
